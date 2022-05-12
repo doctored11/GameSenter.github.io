@@ -4,13 +4,23 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/style.css">
    <title>Document</title>
 </head>
 <body>
-   <header>
-      <a href="#" class="logo"></a>
-      <div class="header__nav-list"></div>
-      <div class="header-serch"></div>
+   <header class="header">
+      <a href="#" class="logo header__logo"></a>
+      <ul class="header__nav-list">
+         <li class="header__nav-item">Home</li>
+         <li class="header__nav-item">Pages</li>
+         <li class="header__nav-item">Products</li>
+         <li class="header__nav-item">Blog</li>
+         <li class="header__nav-item">Shop</li>
+         <li class="header__nav-item">Contact</li>
+         
+      </ul>
+      <input class="header-serch" placeholder="Search">
       <div class="header__user-menu">
          <ul class="header__user-list">
           <li class="header__user-item"></li>
@@ -23,52 +33,77 @@
       <!--  -->
 <div class="main__hero-block hero">
 <div class="hero__swiper swiper">
-   <h2 class="hero__heading"></h2>
-   <p class="hero__paragraph"></p>
-   <h3 class="hero__coast"></h3>
-   <button class="hero__buy-btn"></button>
+   <div class="hero__content-block">
+   <div class="hero__text-block">
+
+   <h2 class="hero__heading">PS4 V2 
+      DualShock 4</h2>
+   <p class="hero__paragraph">
+      wireless controller for playStation 4
+      (compatibilityCentric)
+   </p>
+   <h3 class="hero__coast"> ₹2999</h3>
+   </div>
+
+   <button class="hero__buy-btn"> Buy Now</button>
+</div>
 </div>
 </div>
 <!--  -->
 <section class="main__products products">
    <div class="products__feature feature">
-      <h3 class="feature__heading small-heading"> feature products</h3>
-      <div class="feature__card card"></div>
-      <div class="feature__card card"></div>
-      <div class="feature__card card"></div>
+      <div class="frame">
+         <h3 class="feature__heading small-heading"> feature products</h3>
+         <ul class="feature__card-list">
+      
+         <li class="feature__card card"></li>
+         <li class="feature__card card"></li>
+         <li class="feature__card card"></li></ul>
+      </div>
+   
    </div>
    <div class="products__latest latest">
-      <ul class="tab-fealter latest__tab">
-         <li class="tab-fialter__item"></li>
-         <li class="tab-fialter__item"></li>
-         <li class="tab-fialter__item"></li>
-         <li class="tab-fialter__item"></li>
-      </ul>
-      <ul class="products__cards">
-         <li class="products__card card"></li>
-         <li class="products__card card"></li>
-         <li class="products__card card"></li>
-         <li class="products__card card"></li>
-         <li class="products__card card"></li>
-         <li class="products__card card"></li>
-      </ul>
+      <div class="frame">
+         <h3 class="small-heading offer__heading">Leatest Products</h3>
+         <ul class="tab-fealter latest__tab">
+            <li class="tab-fialter__item"></li>
+            <li class="tab-fialter__item"></li>
+            <li class="tab-fialter__item"></li>
+            <li class="tab-fialter__item"></li>
+         </ul>
+         <ul class="products__cards cards-grid">
+            <li class="products__card card"></li>
+            <li class="products__card card"></li>
+            <li class="products__card card"></li>
+            <li class="products__card card"></li>
+            <li class="products__card card"></li>
+            <li class="products__card card"></li>
+         </ul>
+      </div>
    </div>
 
 </section>
-<section class="offer">
-   <h3 class="small-heading offer__heading">
-      <ul>
+<section class="offer ">
+   <div class="frame">
+   <h3 class="small-heading offer__heading">Leatest Products</h3>
+      <ul class=" cards-grid offer__cards ">
          <li class="card card--white offer__card"></li>
          <li class="card card--white offer__card"></li>
          <li class="card card--white offer__card"></li>
          <li class="card card--white offer__card"></li>
       </ul>
-   </h3>
+   </div>
 </section>
 <section class="trend main__trend">
-   <div class="trend__card card"></div>
-      <div class="trend__card card"></div>
-      <div class="trend__card card"></div>
+   <div class="frame">
+   <h3 class="small-heading trend__heading">Trending Products</h3>
+   <ul class="trend__cards cards-grid">
+   <li class="trend__card card"></li>
+      <li class="trend__card card"></li>
+      <li class="trend__card card"></li>
+   </ul>
+   </div>
+
 </section>
 <section class="blog main__blog">
    <ul class="blog__list">
@@ -77,7 +112,7 @@
       <li class="blog__item"></li>
    </ul>
 </section>
-<footer></footer>
+<footer> </footer>
 
 
 
