@@ -190,7 +190,7 @@ margin-bottom: 80px;
 
 /*  ------- */
 .frame  {
-  padding: 0 14% ;
+  padding: 0 21% ;
   
 }
 /*  */
@@ -320,4 +320,14 @@ margin-bottom: 20px;
 }
 ul{
   padding: 0;
+}
+
+
+
+@media (max-width:1550px) {
+  .frame  {
+    padding: 0 14% ;
+
+  }
+  
 }
