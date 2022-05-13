@@ -294,7 +294,8 @@ html .offer__cards{
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
-  color: red;
+  color: #fff;
+  
 }
 .footer__colum:first-child{
   flex: 2;
@@ -304,6 +305,18 @@ html .offer__cards{
 }
 .footer__menu-links{
   padding: 0;
+}
+.footer__menu-link{
+  margin-bottom: 5px;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+.footer__colum-heading{
+
+font-size: 16px;
+line-height: 20px;
+font-family: 'Montserrat', sans-serif;
+margin-bottom: 20px;
 }
 ul{
   padding: 0;
