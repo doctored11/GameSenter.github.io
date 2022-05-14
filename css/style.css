@@ -37,6 +37,7 @@ section{
   height: 1%;
   justify-content: space-evenly;
   align-items: center;
+  padding: 15px 5px;
 }
 ul{
   text-decoration: none;
@@ -362,8 +363,35 @@ line-height: 12px;
 color: #fff;
 
 }
-
-
+.footer__social-media{
+  display: flex;
+  align-content: center;
+    align-items: center;
+}
+.social__profile{
+  margin-right: 8px;
+}
+.special-info{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__download-heading{
+  color: #fff;
+  margin-right: 25px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+font-size: 12px;
+line-height: 12px;
+color: #fff;
+}
+.special-info__download-block{
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
+}
+.download{
+  margin-right: 10px;
+}
 
 
 
