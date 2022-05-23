@@ -13,7 +13,9 @@
   margin: 0;
 }
 
-
+.main{
+  overflow: hidden;
+}
 
 body{
   width: 100%;
@@ -95,6 +97,7 @@ height: 44px;
 .hero__swiper{
   /* width: 100%; */
   height: 593px;
+  
   background-color: var(--main-back-color);
   display: flex;
   flex-direction: column;
@@ -107,10 +110,11 @@ height: 44px;
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: space-around;
   background: no-repeat url(../sourse/circle2.svg);
   background-position: right 5% top 50%;
+  position: relative;
  
   padding-right: 10%;
   margin-right: -10%;
@@ -123,6 +127,9 @@ height: 44px;
   justify-content: space-evenly;
 }
 .hero__buy-btn{
+  position: absolute;
+  left: 0;
+  bottom: 10px;
   height: 88px;
 width: 395px;
 background: linear-gradient(180deg, #EC368D 0%, #D72828 100%);
@@ -142,9 +149,35 @@ letter-spacing: 0em;
 text-align: left;
 
 }
+.hero__bunner-content{
+  display: flex;
+  flex-direction: column;
+    justify-content: space-evenly;
+
+    align-content: center;
+    position: relative;
+    align-items: flex-end;
+    
+    
+}
+.hero__main-img{
+  max-width: 770px;
+  max-height: 650px;
+  margin: 0 auto;
+  margin-left: 15px;
+  transform:translateX(85px);
+ 
+ 
+}
+.hero__sale-ico{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .hero__paragraph{
   display: inline-block;
   max-width: 500px;
+  min-width: 250px;
   font-family: Montserrat;
 font-size: 24px;
 font-weight: 600;
