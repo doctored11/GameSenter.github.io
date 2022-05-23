@@ -425,8 +425,29 @@ color: #fff;
 .download{
   margin-right: 10px;
 }
-
-
+/* Card */
+.card{
+  display: flex;
+  flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px 15px;
+    position: relative;
+    min-width: 300px;
+    max-width: 330px;
+}
+.card__logo{
+  position: absolute;
+  top: -15%;
+  left: auto;
+}
+.card__heading{
+  font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 50px;
+}
 
 
 
