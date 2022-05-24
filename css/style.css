@@ -201,7 +201,7 @@ text-align: left;
 /*  
 */
 .small-heading{
-  font-family: Montserrat;
+  font-family: 'Josefin Sans', sans-serif;
 font-size: 42px;
 font-weight: 700;
 line-height: 51px;
@@ -441,12 +441,58 @@ color: #fff;
   position: absolute;
   top: -15%;
   left: auto;
+  
+}
+.card__logo--product{
+  top: -5%;
+  min-width: 140px;
+  font-family: 'Poppins', sans-serif;
+
+  max-width: 300px;
+  max-height: 265px;
 }
 .card__heading{
   font-style: normal;
 font-weight: 500;
 font-size: 36px;
 line-height: 50px;
+font-family: 'Josefin Sans', sans-serif;
+}
+.card__offer-name{
+  color: #151875;
+  margin-bottom: 15px;
+
+}
+.card__price{
+  font-family: 'Poppins', sans-serif;
+}
+.card--white{
+  padding: 10px 25px 25px 15px;
+  max-width: 265px;
+}
+.card__description-offer{
+  text-align: center;
+}
+
+.card--white:nth-child(1){
+  background: url(../sourse/deliv.png)  no-repeat ;
+
+}
+.card--white:nth-child(2){
+  background: url(../sourse/cashback\ 1.png) no-repeat ;
+
+}
+.card--white:nth-child(3){
+  background: url(../sourse/premium-quality\ 1.png) no-repeat ;
+
+}
+.card--white:nth-child(4){
+  background : url(../sourse/24-hours-support\ 1.png)  no-repeat ;
+
+}
+ html .card--white:nth-child(1n){
+
+  background-position: top 25% center;
 }
 
 
@@ -469,7 +515,7 @@ line-height: 50px;
 
 @media (max-width:1750px) {
   .frame  {
-    padding: 0 14% ;
+    padding: 0 12% ;
 
   }
   
