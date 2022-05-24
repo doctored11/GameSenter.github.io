@@ -589,3 +589,17 @@ color: rgba(26, 11, 91, 0.3);
   }
   
 }
+
+
+/*  */
+/*  */.header__nav-item:hover{
+  color: var(--pink-red);
+  transition: color ease 0.3s;
+}
+.card:hover {
+background-color: #72718F;
+transition: background-color cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s;
+}
+.up-img{
+  transform: translateY(50px);
+}
