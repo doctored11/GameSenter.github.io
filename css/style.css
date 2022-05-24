@@ -127,14 +127,40 @@ height: 44px;
   justify-content: space-evenly;
 }
 .hero__buy-btn{
+  
   position: absolute;
+  display: flex;
   left: 0;
   bottom: 10px;
   height: 88px;
 width: 395px;
 background: linear-gradient(180deg, #EC368D 0%, #D72828 100%);
-border: #000;
+border: rgb(255, 255, 255) 2px solid;
+color: #fff;
+padding-right: 80px;
 border-radius: 20px;
+font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+    justify-content: center;
+  
+
+
+}
+.hero__buy-btn p {
+
+  height: 30px;
+  left: 40%;
+  transform: translateY(2px);
+}
+.hero__buy-btn::after{
+  content: "";
+  width: 80px;
+  height: 30px;
+  background: url(../sourse/Arrow\ 1.png) no-repeat;
+top: center;
+right: 20%;
+position: absolute;
 
 }
 .hero__heading{
@@ -208,7 +234,7 @@ line-height: 51px;
 letter-spacing: 0em;
 text-align: left;
 color: #1A0B5B;
--webkit-text-stroke-width: 1px;
+-webkit-text-stroke-width: 0.5px;
 -webkit-text-stroke-color: black;
 text-align: center;
 margin-bottom: 80px;
@@ -457,21 +483,49 @@ font-weight: 500;
 font-size: 36px;
 line-height: 50px;
 font-family: 'Josefin Sans', sans-serif;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
 }
 .card__offer-name{
   color: #151875;
   margin-bottom: 15px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
 
 }
 .card__price{
   font-family: 'Poppins', sans-serif;
+  font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+
+
+color: #151875;
 }
 .card--white{
   padding: 10px 25px 25px 15px;
   max-width: 265px;
 }
 .card__description-offer{
+  font-family: 'Josefin Sans', sans-serif;
+
   text-align: center;
+  font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 120%;
+
+text-align: center;
+
+color: rgba(26, 11, 91, 0.3);
+
 }
 
 .card--white:nth-child(1){
@@ -494,6 +548,21 @@ font-family: 'Josefin Sans', sans-serif;
 
   background-position: top 25% center;
 }
+ .blog__item:nth-child(1){
+  background:url(../sourse/blog1.png) no-repeat  ;
+}
+ .blog__item:nth-child(2){
+  background: url(../sourse/blog2.png) no-repeat ;}
+ .blog__item:nth-child(3){
+  background:url(../sourse/blog3.png) no-repeat ;}
+  .blog__item{
+    background-position: top;
+    width: 100%;
+    max-height: 49%;
+  }
+  .blog__content-part{
+    max-height: 35%;
+  }
 
 
 
