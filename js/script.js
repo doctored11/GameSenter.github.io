@@ -1,10 +1,29 @@
-let card = document.querySelectorAll(".header__nav-item");
+let card = document.querySelectorAll(".card--pink");
+let cardHeading = document.querySelectorAll(".card__heading");
 
-let logo = document.querySelector(".card__logo");
-// card.forEach(card => card.addEventListener('mousemove', animUp()));
-// function animUp(){
-//   card.classList.add("up-img");
-// }
-card.forEach(function(){
-  logo.classList.add('а');
-}) ;
+let logo = document.querySelectorAll(".card__logo");
+
+
+// card.forEach(function(){
+//   logo.classList.add('а');
+// }) ;
+
+card.forEach(function(el){
+  el.addEventListener('mouseover', function() {
+    
+    el.childNodes[1].classList.add("up-img");
+    
+    
+    
+  })
+  el.addEventListener('mouseout', function() {
+    
+    el.childNodes[1].classList.remove("up-img");
+  })
+
+})
+
+  
+  
+  
+

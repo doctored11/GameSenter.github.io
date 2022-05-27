@@ -137,7 +137,7 @@ width: 395px;
 background: linear-gradient(180deg, #EC368D 0%, #D72828 100%);
 border: rgb(255, 255, 255) 2px solid;
 color: #fff;
-padding-right: 80px;
+
 border-radius: 20px;
 font-weight: 800;
   font-family: 'Montserrat', sans-serif;
@@ -150,19 +150,12 @@ font-weight: 800;
 .hero__buy-btn p {
 
   height: 30px;
-  left: 40%;
+  left: 50%;
   transform: translateY(2px);
 }
-.hero__buy-btn::after{
-  content: "";
-  width: 80px;
-  height: 30px;
-  background: url(../sourse/Arrow\ 1.png) no-repeat;
-top: center;
-right: 20%;
-position: absolute;
 
-}
+
+
 .hero__heading{
   display: inline-block;
   max-width: 320px;
@@ -269,6 +262,7 @@ margin-bottom: 80px;
   max-width: 320px;
   margin-right: 0;
   box-shadow: 0 0 30px 1px #91919111;
+  transition: all ease 0.2s;
 }
 html .offer__cards{
   display: flex;
@@ -309,7 +303,8 @@ html .offer__cards{
   justify-content: flex-end;
   position: relative;
   padding: 0 15px 20px 15px;
-  height: 500px;
+  max-height: 500px;
+  min-height: 400px;
 }
 .blog__content-part{
   height: 43%;
@@ -462,11 +457,15 @@ color: #fff;
     position: relative;
     min-width: 300px;
     max-width: 330px;
+
 }
 .card__logo{
   position: absolute;
   top: -15%;
+  
   left: auto;
+  transition: transform cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.3s;
+  
   
 }
 .card__logo--product{
@@ -479,14 +478,13 @@ color: #fff;
 }
 .card__heading{
   font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 50px;
+
 font-family: 'Josefin Sans', sans-serif;
 font-weight: 600;
 font-size: 18px;
 line-height: 27px;
 text-align: center;
+transition: all ease 0.2s;
 }
 .card__offer-name{
   color: #151875;
@@ -563,6 +561,9 @@ color: rgba(26, 11, 91, 0.3);
   .blog__content-part{
     max-height: 35%;
   }
+  html body  .blog__item:nth-child(1n){
+    background-position: top center;
+  }
 
 
 
@@ -596,10 +597,32 @@ color: rgba(26, 11, 91, 0.3);
   color: var(--pink-red);
   transition: color ease 0.3s;
 }
-.card:hover {
+.card--pink:hover {
 background-color: #72718F;
 transition: background-color cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s;
+
 }
 .up-img{
-  transform: translateY(50px);
+  transform: translateY(-50px);
+  transition: transform cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s; 
+}
+.up-img + .card__heading{
+  transform: translateY(-20px);
+  font-weight: 800;
+  font-size: 32px;
+  transition: all ease 0.2s;
+}
+.card--white:hover{
+
+  box-shadow: 0 5px 35px 2px #9191913e;
+  transform: translateY(-10px) scale(110%);
+  transition: transform cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.3s ,
+  scale cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s,
+  box-shadow ease 0.2s;  
+
+}
+.hero__buy-btn:hover p{
+  transform: scale(150%);
+  transform: translateY(10px);
+  
 }
