@@ -137,6 +137,7 @@ width: 395px;
 background: linear-gradient(180deg, #EC368D 0%, #D72828 100%);
 border: rgb(255, 255, 255) 2px solid;
 color: #fff;
+transition: all ease 0.1s;
 
 border-radius: 20px;
 font-weight: 800;
@@ -621,8 +622,14 @@ transition: background-color cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s;
   box-shadow ease 0.2s;  
 
 }
-.hero__buy-btn:hover p{
-  transform: scale(150%);
-  transform: translateY(10px);
+.hero__buy-btn:hover {
+  background: linear-gradient(180deg, #D72828  0%,  #EC368D 100%);
+  transform: scale(110%);
+  transition: all ease 0.2s;
+
+ 
   
+}
+.header__nav-item:hover{
+  cursor: pointer;
 }
