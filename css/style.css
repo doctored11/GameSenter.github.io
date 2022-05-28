@@ -63,9 +63,16 @@ height: 44px;
 .header__nav-list{
   display: flex;
   color: #fff;
+  width: 371px;
 }
+
+.header__nav-item{
+  padding: 1px 5px;
+}
+
 .header__nav-item:not(:last-child){
   margin-right: 25px;
+ 
 }
 .header-serch{
   background-color: #fff;
@@ -714,7 +721,7 @@ transition: all ease  0.1s;
    border-radius: 50px;
  }
  .header__nav-item:focus{
-   padding: 1px 5px;
+   
   outline: none;
   transform: scale(110%) translateY(5px);
   background-color: var(--back-focus);
