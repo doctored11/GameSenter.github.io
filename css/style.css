@@ -4,6 +4,7 @@
   --main-heading-color: #151875;
   --main-second-color:#72718F;
   --pink-red: #FD0054;
+  --back-focus: #ffffff1f;
 }
 
 
@@ -47,9 +48,13 @@ ul{
   list-style: none;
 }
 .logo{
-  background-image: url(../sourse/logoG.svg);
+  padding: 8px;
+  background-image: url(../sourse/logoG.svg) ;
+  background-repeat: no-repeat;
   width: 180px;
   height: 44px;
+  background-position: center;
+
 }
 .header__logo{
 width: 180px;
@@ -73,10 +78,34 @@ height: 44px;
   color: #000;
 }
 .header__user-item{
-  width: 20px;
-  height: 20px;
+  transition: all ease 0.1s;
+  width: 30px;
+  height: 30px;
 }
-.header__user-item:nth-child(1){
+.header__user-item:first-child{
+  width: 35px;
+  height: 35px;
+}
+.header__user-item svg path, .header__user-item svg rect{
+  fill: #ffffff;
+  transition: all ease 0.1s;
+
+}
+
+
+.social__profile{
+  transition: all ease 0.1s;
+  width: 30px;
+  height: 30px;
+}
+
+
+.social__profile svg path, .social__profile svg rect{
+  fill: #ffffff;
+  transition: all ease 0.1s;
+
+}
+/* .header__user-item:nth-child(1){
   background: no-repeat url(../sourse/salecard.svg);
 
 }
@@ -87,7 +116,7 @@ height: 44px;
 .header__user-item:nth-child(3){
   background: no-repeat url(../sourse/buy.svg);
 
-}
+} */
 .header__user-item:not(:last-child){
   margin-right: 10px;
 }
@@ -358,15 +387,18 @@ html .offer__cards{
   flex-direction: column;
   justify-content: flex-start;
   color: #fff;
+  margin-right: 20px;
   
 }
 .footer__colum:first-child{
-  flex: 2;
+  flex: 2.5;
 }
 .footer__colum:not(:first-child){
   flex: 1;
 }
 .footer__menu-links{
+  transition: all ease  0.1s;
+
   padding: 0;
 }
 .footer__menu-link{
@@ -407,7 +439,7 @@ margin-right: 10px;
 }
 .subscribe{
   width: 129px;
-height: 36.8px;
+height: 44px;
 background: transparent;
 border: 2px solid var(--pink-red);
 border-radius: 10px;
@@ -607,7 +639,7 @@ transition: background-color cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s;
   transform: translateY(-50px);
   transition: transform cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s; 
 }
-.up-img + .card__heading{
+.up-img + .card__heading {
   transform: translateY(-20px);
   font-weight: 800;
   font-size: 32px;
@@ -633,3 +665,102 @@ transition: background-color cubic-bezier(0.275, 0.470, 1.000, 0.455) 0.2s;
 .header__nav-item:hover{
   cursor: pointer;
 }
+.footer__menu-link:hover{
+color: var(--pink-red);
+cursor: pointer;
+transition: all ease  0.1s;
+}
+.header__user-item:hover, .social__profile:hover{
+  transform: scale(120%);
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+}
+
+
+
+.social__profile:hover svg path, .social__profile:hover svg rect, .header__user-item:hover svg path, .header__user-item:hover svg rect{
+  fill: var(--pink-red);
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+
+}
+.download:hover img{
+  transform: scale(110%) ;
+  transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+}
+.header-serch:hover, .email-input:hover{
+ outline: var(--pink-red) solid 2px;
+ transition: all ease 0.1s;
+}
+/*  */
+.subscribe:hover{
+  background-color: var(--pink-red);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+}
+/*  */
+ :focus{
+   transform: scale(105%);
+  outline: var(--pink-red) solid 2px;
+  transition: all ease 0.1s;
+ }
+ .logo:focus{
+   
+   outline: none;
+   transform: scale(110%);
+   background-color: var(--back-focus);
+   border-radius: 50px;
+ }
+ .header__nav-item:focus{
+   padding: 1px 5px;
+  outline: none;
+  transform: scale(110%) translateY(5px);
+  background-color: var(--back-focus);
+  border-radius: 50px;
+  transition:  padding ease 0.2s, transform cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s ;
+ }
+ .header__user-item:focus  {
+  outline: none;
+  fill: var(--pink-red);
+  
+  transform: scale(110%) translateY(5px);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
+
+ }
+ .header__user-item:focus path, .header__user-item:focus rect {
+  fill: var(--pink-red);
+ }
+ .hero__buy-btn:focus{
+   transform: scale(120%);
+   transition: all ease 0.1s;
+   
+   
+ }
+ .card--pink:focus{ 
+   outline: none;
+   background-color: var(--main-second-color);
+   transform: scale(105%);
+   box-shadow: 0 0 10px 4px #7272728f;
+   transition: background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s ,
+   transform  ease 0.2s,
+   box-shadow ease 0.3s
+   ;
+ }
+ a:focus{
+   outline: none;
+   color: var(--pink-red);
+ }
+ .footer__menu-link:focus{
+  outline: none;
+  color: var(--pink-red);
+
+ }
+ .social__profile:focus{
+  outline: none;
+  fill: var(--pink-red);
+  
+  transform: scale(110%) translateY(-5px);
+  transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s;
+
+ }
+ .social__profile:focus path, .social__profile:focus rect {
+  fill: var(--pink-red);
+ }
+ 

@@ -9,15 +9,10 @@ let logo = document.querySelectorAll(".card__logo");
 // }) ;
 
 card.forEach(function(el){
-  el.addEventListener('mouseover', function() {
-    
+  el.addEventListener('mouseover', function() {  
     el.childNodes[1].classList.add("up-img");
-    
-    
-    
   })
-  el.addEventListener('mouseout', function() {
-    
+  el.addEventListener('mouseout', function() { 
     el.childNodes[1].classList.remove("up-img");
   })
 
