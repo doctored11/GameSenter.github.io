@@ -283,6 +283,7 @@ margin-bottom: 80px;
   height: 320px;
   border-radius: 45px;
   background: #FECEDE;
+  
 
 }
  .card--white {
@@ -621,6 +622,10 @@ color: rgba(26, 11, 91, 0.3);
     padding: 0 12% ;
 
   }
+  .offer__card{
+    max-width: 50px;
+    padding: 10px 5px 15px 5px;
+  }
   
 }
 
@@ -763,4 +768,52 @@ transition: all ease  0.1s;
  .social__profile:focus path, .social__profile:focus rect {
   fill: var(--pink-red);
  }
+ /*  */
+ a:active{
+   outline: none;
+   transform: none;
+   color: var(--main-heading-color);
+   transform: scale(180%) ;
+   
+ }
+ .logo:active{
+   transform: none;
+   box-shadow: 0 0 2px 1px #7272728f inset;
+
+
+ }
+
+ body .header__user-item:active{
+  fill: var(--main-heading-color);
+  transform: scale(150%);
+
+
+}
+
+ body .header__user-item:active path, body .header__user-item:active rect{
+  fill: var(--main-heading-color);
+  transition: all ease 0.1s;
+
+ }
+ .hero__buy-btn:active{
+   transform: scale(120%) translateY(5px);
+   box-shadow: 0 0 5px 3px var(--pink-red)  inset;
+   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.05s;
+
+ }
+ .card:active{
+   box-shadow: 0 0 75px 15px var(--main-back-color)  inset;
+   transform:rotate(5deg) scale(110%) translateY(-10px);
+   transition: rotate ease 0.01s,
+   scale cubic-bezier(0.165, 0.84, 0.44, 1) 0.05s ;
+    
  
+
+ }
+ .footer__menu-link:active, .header__nav-item:active{
+   color: var(--main-heading-color);
+ }
+  .subscribe:active{
+    transform: scale(110%) translateY(1px);
+  }
+
