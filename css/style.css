@@ -74,14 +74,14 @@ height: 44px;
   margin-right: 25px;
  
 }
-.header-serch{
+.header-search{
   background-color: #fff;
   border-radius: 50px;
   width: 245px;
   height: 35px;
   border: #fff 1px solid;
 }
-.header-serch::placeholder{
+.header-search::placeholder{
   color: #000;
 }
 .header__user-item{
@@ -112,24 +112,33 @@ height: 44px;
   transition: all ease 0.1s;
 
 }
-/* .header__user-item:nth-child(1){
-  background: no-repeat url(../sourse/salecard.svg);
 
-}
-.header__user-item:nth-child(2){
-  background: no-repeat url(../sourse/profile.svg);
-
-}
-.header__user-item:nth-child(3){
-  background: no-repeat url(../sourse/buy.svg);
-
-} */
 .header__user-item:not(:last-child){
   margin-right: 10px;
 }
 .header__user-list{
   display: flex;
 }
+
+.header__burger{
+  display: none;
+}
+.burger__line{
+  width: 30px;
+  height: 5px;
+  border-radius: 1px;
+  background-color: #fff;
+
+}
+.burger__line:not(:last-child){
+  margin-bottom: 4px;
+}
+
+
+
+
+
+
 .hero__swiper{
   /* width: 100%; */
   height: 593px;
@@ -698,7 +707,7 @@ transition: all ease  0.1s;
   transform: scale(110%) ;
   transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
 }
-.header-serch:hover, .email-input:hover{
+.header-search:hover, .email-input:hover{
  outline: var(--pink-red) solid 2px;
  transition: all ease 0.1s;
 }
