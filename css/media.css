@@ -142,6 +142,13 @@ justify-content: space-between;
 
 }
 @media (max-width:830px) {
+    .header__nav-list{
+        /* transform: translateY(-450px);
+        opacity: 0;
+        
+        transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 5s ; */
+
+    }
 
 
     
@@ -201,6 +208,12 @@ justify-content: space-between;
         text-align: center;
         font-size: 32px;
     }
+   .header__logo{
+       margin: 0 auto;
+       
+       
+   }
+
     .hero__paragraph {
        
         display: none;}
@@ -216,4 +229,94 @@ justify-content: space-between;
         .hero__buy-btn      {
             width: 80%;
         }
+}
+/*  
+*/
+
+
+
+
+
+
+
+.burger-active{
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 85px 0 0 10px;
+    
+    width: 100%;
+    min-height: 400px;
+    max-height: 800px;
+    text-align: center;
+    display: flex;
+    /* background-color: rgb(172, 193, 35); */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba(255,255,255,.6);
+    backdrop-filter: blur(5px);
+    border-right: 5px white solid;
+    border-bottom: 5px white solid ;
+    border-radius:  0 0 10px 0;
+    
+    /* transition: ttranslateY ease 300s ; */
+    
+
+
+
+}
+
+.burger-active *:not(:last-child){
+    margin: 0;
+    margin-bottom: 1.2rem;
+}
+.burger-active *{
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.2rem;
+}
+
+.burger--cross{
+    position: absolute;
+    z-index: 5;
+    transition: all ease 5s;
+    
+
+}
+
+.burger--cross *{
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s ,
+    background-color ease 0.15s;
+    ;
+}
+.burger--cross + .header__logo{
+    transform: translateX(15px) scale(120%);
+}
+.burger *{
+    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ,
+    background-color ease 0.15s;
+    ;
+
+}
+.burger--cross >:nth-child(2){
+    visibility: hidden;
+}
+.burger--cross >:nth-child(1){
+    background-color: black;
+    transform: rotate(-45deg) ;
+    transform-origin: center;
+    transform: translateY(18px) rotate(45deg);
+}
+.burger--cross >:nth-child(3){
+    background-color: black;
+transform: translateY(-8px);
+transform-origin: center;
+transform: rotate(-45deg) ;
+    
 }

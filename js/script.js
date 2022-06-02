@@ -1,5 +1,7 @@
 let card = document.querySelectorAll(".card--pink");
 let cardHeading = document.querySelectorAll(".card__heading");
+let burger = document.querySelector(".burger");
+let burgerList = document.querySelector(".header__nav-list");
 
 let logo = document.querySelectorAll(".card__logo");
 
@@ -17,6 +19,14 @@ card.forEach(function(el){
   })
 
 })
+
+
+burger.addEventListener('click', function() {  
+  burger.classList.toggle("burger--cross");
+  burgerList.classList.toggle("burger-active");
+})
+
+
 
   
   
