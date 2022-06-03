@@ -24,6 +24,7 @@ card.forEach(function(el){
 burger.addEventListener('click', function() {  
   burger.classList.toggle("burger--cross");
   burgerList.classList.toggle("burger-active");
+  document.querySelector(".body").classList.toggle("lock");
 })
 
 
@@ -32,3 +33,4 @@ burger.addEventListener('click', function() {
   
   
 
+// 

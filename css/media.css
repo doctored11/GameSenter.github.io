@@ -39,6 +39,9 @@
     .hero__bunner-content{
         display: none;
     }
+    body main *:hover, body main *:focus{
+        transition: all 9999s ease 9999s !important;
+    }
     .hero__buy-btn{
         position: relative;
     }
@@ -146,8 +149,34 @@ justify-content: space-between;
         /* transform: translateY(-450px);
         opacity: 0;
         
+        
+        
         transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) 5s ; */
+        min-height: 400px;
+         max-height: 800px;
+        text-align: center;
+        display: flex;
+        margin: 0;
+        left: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        min-width: 100%;
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+        top: -100%;
+        transition: top ease 2s,
+        visibility 1s ease 1s,
+        background-color 2s ease,
+        all 4s ease
+        ;
 
+
+    }
+    .header__nav-list *{
+        transition: all 2s ease 1s;
     }
 
 
@@ -238,7 +267,9 @@ justify-content: space-between;
 
 
 
-
+.lock {
+    overflow: hidden;
+}
 .burger-active{
    
     position: absolute;
@@ -262,8 +293,9 @@ justify-content: space-between;
     border-right: 5px white solid;
     border-bottom: 5px white solid ;
     border-radius:  0 0 10px 0;
+    visibility: visible;
     
-    /* transition: ttranslateY ease 300s ; */
+    transition: top ease 1.2s ;
     
 
 
@@ -274,34 +306,39 @@ justify-content: space-between;
     margin: 0;
     margin-bottom: 1.2rem;
 }
-.burger-active *{
+html .burger-active *{
     font-size: 28px;
     color: black;
     margin: 0;
     padding: 0;
     margin-bottom: 1.2rem;
+    transition: none;
 }
 
 .burger--cross{
     position: absolute;
     z-index: 5;
-    transition: all ease 5s;
+    transition: all ease 5s ;
     
 
 }
 
-.burger--cross *{
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s ,
-    background-color ease 0.15s;
-    ;
+html .burger--cross *{
+    transition: transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.8s ,
+    background-color 0.15s ease  0.8s,
+    visibility 0.1s ease 0.8s  ;
+    
+    
 }
 .burger--cross + .header__logo{
     transform: translateX(15px) scale(120%);
 }
 .burger *{
-    transition: transform cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ,
-    background-color ease 0.15s;
+    transition: transform  0.3s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s  ,
+    background-color 0.15s ease  0.4s ,
+    visibility 0.1s ease 0.4s
     ;
+    
 
 }
 .burger--cross >:nth-child(2){
@@ -319,4 +356,25 @@ transform: translateY(-8px);
 transform-origin: center;
 transform: rotate(-45deg) ;
     
+}
+.feature__card{
+    margin: 15px 20px;
+}
+.swiper-slide{
+    
+    
+}
+.swiper-slide-active{
+   z-index: 10;
+  
+    
+}
+.swiper-slide-prev{
+  
+   
+
+}
+.swiper{
+    
+   padding: 40px;
 }
